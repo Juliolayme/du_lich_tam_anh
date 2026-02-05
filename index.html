@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Cental - Car Rent Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="site-header"></div>
+
+        <!-- Carousel Start -->
+        <div id="home" class="header-carousel mb-5">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="First slide"/>
+                        <div class="carousel-caption">
+                            <div class="container py-4">
+                                <div class="row g-5">
+                                    <div class="col-lg-6 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                        <div class="bg-secondary rounded p-5">
+                                            <h4 class="text-white mb-4">TƯ VẤN BÁO GIÁ</h4>
+                                            <form id="quoteForm">
+                                                <div class="row g-3">
+                                                    <div class="col-12">
+                                                        <select name="vehicle_type" class="form-select" aria-label="Default select example">
+                                                         <option selected>Chọn loại xe</option>
+                                                            <option value="4_ch">4 CHỔ</option>
+                                                            <option value="7_ch">7 CHỔ</option>
+                                                            <option value="16_ch">16 CHỔ</option>
+                                                            <option value="45_ch">45 CHỔ</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="input-group">
+                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                                                <span class="fas fa-map-marker-alt"></span> <span class="ms-1">Địa điểm đón</span>
+                                                            </div>
+                                                            <input name="pickup" class="form-control" type="text" placeholder="Nhập địa điểm cần đón" aria-label="Nhập địa điểm cần đón">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <a href="#" class="text-start text-white d-block mb-2">Bạn cần địa điểm đến khác?</a>
+                                                        <div class="input-group">
+                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                                                <span class="fas fa-map-marker-alt"></span><span class="ms-1">Địa điểm đến</span>
+                                                            </div>
+                                                            <input name="dropoff" class="form-control" type="text" placeholder="Nhập địa điểm đến" aria-label="Nhập địa điểm đến">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="input-group">
+                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                                                <span class="fas fa-calendar-alt"></span><span class="ms-1">Ngày giờ đón</span>
+                                                            </div>
+                                                            <input name="pickup_date" class="form-control" type="date">
+                                                            <select name="pickup_time" class="form-select ms-3" aria-label="Default select example">
+                                                                <option selected>12:00</option>
+                                                                <option value="01:00">01:00</option>
+                                                                <option value="02:00">02:00</option>
+                                                                <option value="03:00">03:00</option>
+                                                                <option value="04:00">04:00</option>
+                                                                <option value="05:00">05:00</option>
+                                                                <option value="06:00">06:00</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="input-group">
+                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                                                <span class="fas fa-calendar-alt"></span><span class="ms-1">Ngày giờ đến</span>
+                                                            </div>
+                                                            <input name="drop_date" class="form-control" type="date">
+                                                            <select name="drop_time" class="form-select ms-3" aria-label="Default select example">
+                                                                <option selected>12:00</option>
+                                                                <option value="01:00">01:00</option>
+                                                                <option value="02:00">02:00</option>
+                                                                <option value="03:00">03:00</option>
+                                                                <option value="04:00">04:00</option>
+                                                                <option value="05:00">05:00</option>
+                                                                <option value="06:00">06:00</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button id="quoteSubmit" type="button" class="btn btn-light w-100 py-2">Đặt xe ngay</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 d-none d-lg-flex fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                                        <div class="text-start">
+                                            <h1 class="display-5 text-white">THUÊ XE RẺ LIÊN TỈNH KÈM TÀI XẾ XUẤT VAT</h1>
+                                            <p>THUÊ XE RẺ LIÊN TỈNH - CÁC DÒNG XE 4C-7C-16C-45C ĐỜI MỚI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="First slide"/>
+                        <div class="carousel-caption">
+                            <div class="container py-4">
+                                <div class="row g-5">
+                                    <div class="col-lg-6 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                        <div class="bg-secondary rounded p-5">
+                                            <h4 class="text-white mb-4">TƯ VẤN BÁO GIÁ</h4>
+                                            <form>
+                                                <div class="row g-3">
+                                                    <div class="col-12">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Chọn loại xe</option>
+                                                            <option value="1">4 CHỔ</option>
+                                                            <option value="2">7 CHỔ</option>
+                                                            <option value="3">16 CHỔ</option>
+                                                            <option value="4">45 CHỔ</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="input-group">
+                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                                                <span class="fas fa-map-marker-alt"></span><span class="ms-1">Địa điểm đón</span>
+                                                            </div>
+                                                            <input class="form-control" type="text" placeholder="Nhập địa điểm cần đón" aria-label="Nhập địa điểm cần đón">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <a href="#" class="text-start text-white d-block mb-2">Bạn cần địa điểm đến khác?</a>
+                                                        <div class="input-group">
+                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                                                <span class="fas fa-map-marker-alt"></span><span class="ms-1">Địa điểm đến</span>
+                                                            </div>
+                                                            <input class="form-control" type="text" placeholder="Nhập địa điểm đến" aria-label="Nhập địa điểm đến">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="input-group">
+                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                                                <span class="fas fa-calendar-alt"></span><span class="ms-1">Ngày giờ đón</span>
+                                                            </div>
+                                                            <input class="form-control" type="date">
+                                                            <select class="form-select ms-3" aria-label="Default select example">
+                                                                <option selected>12:00AM</option>
+                                                                <option value="1">1:00AM</option>
+                                                                <option value="2">2:00AM</option>
+                                                                <option value="3">3:00AM</option>
+                                                                <option value="4">4:00AM</option>
+                                                                <option value="5">5:00AM</option>
+                                                                <option value="6">6:00AM</option>
+                                                                <option value="7">7:00AM</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="input-group">
+                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
+                                                                <span class="fas fa-calendar-alt"></span><span class="ms-1">Ngày giờ đến</span>
+                                                            </div>
+                                                            <input class="form-control" type="date">
+                                                            <select class="form-select ms-3" aria-label="Default select example">
+                                                                <option selected>12:00AM</option>
+                                                                <option value="1">1:00AM</option>
+                                                                <option value="2">2:00AM</option>
+                                                                <option value="3">3:00AM</option>
+                                                                <option value="4">4:00AM</option>
+                                                                <option value="5">5:00AM</option>
+                                                                <option value="6">6:00AM</option>
+                                                                <option value="7">7:00AM</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button class="btn btn-light w-100 py-2">Đặt xe ngay</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 d-none d-lg-flex fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                                        <div class="text-start">
+                                            <h1 class="display-5 text-white">THUÊ XE RẺ LIÊN TỈNH KÈM TÀI XẾ XUẤT VAT</h1>
+                                            <p>THUÊ XE RẺ LIÊN TỈNH - CÁC DÒNG XE 4C-7C-16C-45C ĐỜI MỚI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- About Start -->
+        <div id="about" class="container-fluid overflow-hidden about py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-item">
+                            <div class="pb-5">
+                                <h1 class="display-5 text-capitalize">Du lịch <span class="text-primary">TÂM ANH</span></h1>
+                                <p class="mb-0">Với nhiều năm kinh nghiệm trong ngành vận tải và lữ hành, Tâm Anh tự hào là người bạn đồng hành tin cậy trên mọi cung đường. chúng tôi cam kết mang đến dịch vụ vận chuyển hành khách an toàn, chuyên nghiệp và các tour du lịch trọn gói chất lượng cao, giúp khách hàng tận hưởng những hành trình trọn vẹn nhất.
+                                </p>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="about-item-inner border p-4">
+                                        <div class="about-icon mb-4">
+                                            <img src="img/about-icon-1.png" class="img-fluid w-50 h-50" alt="Icon">
+                                        </div>
+                                        <h5 class="mb-3">Tầm nhìn</h5>
+                                        <p class="mb-0">Trở thành đơn vị vận tải và du lịch hàng đầu tại Vĩnh Long và khu vực Đồng bằng sông Cửu Long, không ngừng nâng cao chất lượng phương tiện và dịch vụ để dẫn đầu thị trường.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="about-item-inner border p-4">
+                                        <div class="about-icon mb-4">
+                                            <img src="img/about-icon-2.png" class="img-fluid h-50 w-50" alt="Icon">
+                                        </div>
+                                        <h5 class="mb-3">Sứ mệnh</h5>
+                                        <p class="mb-0">Mang lại sự an tâm tuyệt đối cho khách hàng thông qua đội ngũ tài xế tận tâm, phương tiện hiện đại và quy trình phục vụ chu đáo theo đúng phương châm "Tận tâm trong từng hành trình".</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-item my-4">Hành trình vạn dặm, khởi đầu từ tâm. Chúng tôi không chỉ cung cấp phương tiện, chúng tôi mang đến những trải nghiệm di chuyển an toàn và thoải mái nhất. Sự hài lòng của khách hàng chính là thước đo giá trị cho sự phát triển bền vững của chúng tôi.
+                            </p>
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="text-center rounded bg-secondary p-4">
+                                        <h1 class="display-6 text-white">1000+</h1>
+                                        <h5 class="text-light mb-0">Số lượt chuyến xe</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="rounded">
+                                        <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> Xe đời mới, tiện nghi, chạy tuyến nội tỉnh và liên tỉnh.</p>
+                                        <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> Thiết kế tour du lịch và dịch vụ đặt chỗ chuyên nghiệp.</p>
+                                        <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> Đa dạng dòng xe có động cơ, đáp ứng mọi nhu cầu cá nhân và tổ chức.</p>
+                                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-1"></i> Dịch vụ bốc xếp, kho bãi và trung gian hàng hóa uy tín.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 ">
+                                    <a href="#" class="btn btn-primary rounded py-3 px-5">Đặt xe ngay</a>
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="about-img">
+                            <div class="img-1">
+                                <img src="img/about-img.jpg" class="img-fluid rounded h-100 w-100" alt="">
+                            </div>
+                            <div class="img-2">
+                                <img src="img/about-img-1.jpg" class="img-fluid rounded w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Car categories Start -->
+        <div id="vehicle" class="container-fluid categories py-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h1 class="display-5 text-capitalize mb-3">Phương tiện <span class="text-primary">Tâm Anh</span></h1>
+                    <p class="mb-0">Tại <strong>Tâm Anh</strong>, chúng tôi sở hữu hệ thống <strong>xe đời mới hiện đại</strong>, đa dạng từ xe du lịch 4 chỗ, 7 chỗ đến các dòng xe khách <strong>liên tỉnh chất lượng cao</strong>. Tất cả phương tiện đều được bảo dưỡng định kỳ, trang bị <strong>tiện nghi cao cấp</strong> và luôn trong tình trạng sạch sẽ, đảm bảo mang lại cho quý khách một hành trình <strong>an toàn, êm ái</strong> và trọn vẹn nhất trên mọi cung đường.
+                    </p>
+                </div>
+                <div class="categories-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="categories-item p-4">
+                        <div class="categories-item-inner">
+                            <div class="categories-img rounded-top">
+                                <img src="img/car-1.png" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="categories-content rounded-bottom p-4">
+                                <h4>Mercedes Benz R3</h4>
+                                <div class="categories-review mb-4">
+                                    <div class="me-3">4.5 Review</div>
+                                    <div class="d-flex justify-content-center text-secondary">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">$99:00/Day</h4>
+                                </div>
+                                <div class="row gy-2 gx-0 text-center mb-4">
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-users text-dark"></i> <span class="text-body ms-1">4 Seat</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-car text-dark"></i> <span class="text-body ms-1">AT/MT</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-gas-pump text-dark"></i> <span class="text-body ms-1">Petrol</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-car text-dark"></i> <span class="text-body ms-1">2015</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-cogs text-dark"></i> <span class="text-body ms-1">AUTO</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-road text-dark"></i> <span class="text-body ms-1">27K</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories-item p-4">
+                        <div class="categories-item-inner">
+                            <div class="categories-img rounded-top">
+                                <img src="img/car-2.png" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="categories-content rounded-bottom p-4">
+                                <h4>Toyota Corolla Cross</h4>
+                                <div class="categories-review mb-4">
+                                    <div class="me-3">3.5 Review</div>
+                                    <div class="d-flex justify-content-center text-secondary">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">$128:00/Day</h4>
+                                </div>
+                                <div class="row gy-2 gx-0 text-center mb-4">
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-users text-dark"></i> <span class="text-body ms-1">4 Seat</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-car text-dark"></i> <span class="text-body ms-1">AT/MT</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-gas-pump text-dark"></i> <span class="text-body ms-1">Petrol</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-car text-dark"></i> <span class="text-body ms-1">2015</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-cogs text-dark"></i> <span class="text-body ms-1">AUTO</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-road text-dark"></i> <span class="text-body ms-1">27K</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories-item p-4">
+                        <div class="categories-item-inner">
+                            <div class="categories-img rounded-top">
+                                <img src="img/car-3.png" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="categories-content rounded-bottom p-4">
+                                <h4>Tesla Model S Plaid</h4>
+                                <div class="categories-review mb-4">
+                                    <div class="me-3">3.8 Review</div>
+                                    <div class="d-flex justify-content-center text-secondary">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">$170:00/Day</h4>
+                                </div>
+                                <div class="row gy-2 gx-0 text-center mb-4">
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-users text-dark"></i> <span class="text-body ms-1">4 Seat</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-car text-dark"></i> <span class="text-body ms-1">AT/MT</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-gas-pump text-dark"></i> <span class="text-body ms-1">Petrol</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-car text-dark"></i> <span class="text-body ms-1">2015</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-cogs text-dark"></i> <span class="text-body ms-1">AUTO</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-road text-dark"></i> <span class="text-body ms-1">27K</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories-item p-4">
+                        <div class="categories-item-inner">
+                            <div class="categories-img rounded-top">
+                                <img src="img/car-4.png" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="categories-content rounded-bottom p-4">
+                                <h4>Hyundai Kona Electric</h4>
+                                <div class="categories-review mb-4">
+                                    <div class="me-3">4.8 Review</div>
+                                    <div class="d-flex justify-content-center text-secondary">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">$187:00/Day</h4>
+                                </div>
+                                <div class="row gy-2 gx-0 text-center mb-4">
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-users text-dark"></i> <span class="text-body ms-1">4 Seat</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-car text-dark"></i> <span class="text-body ms-1">AT/MT</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-gas-pump text-dark"></i> <span class="text-body ms-1">Petrol</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-car text-dark"></i> <span class="text-body ms-1">2015</span>
+                                    </div>
+                                    <div class="col-4 border-end border-white">
+                                        <i class="fa fa-cogs text-dark"></i> <span class="text-body ms-1">AUTO</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fa fa-road text-dark"></i> <span class="text-body ms-1">27K</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Car categories End -->
+
+        <!-- Team Start -->
+       <!-- <div class="container-fluid team py-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h1 class="display-5 text-capitalize mb-3">Customer<span class="text-primary"> Suport</span> Center</h1>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut amet nemo expedita asperiores commodi accusantium at cum harum, excepturi, quia tempora cupiditate! Adipisci facilis modi quisquam quia distinctio,
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item p-4 pt-0">
+                            <div class="team-img">
+                                <img src="img/team-1.jpg" class="img-fluid rounded w-100" alt="Image">
+                            </div>
+                            <div class="team-content pt-4">
+                                <h4>MARTIN DOE</h4>
+                                <p>Profession</p>
+                                <div class="team-icon d-flex justify-content-center">
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item p-4 pt-0">
+                            <div class="team-img">
+                                <img src="img/team-2.jpg" class="img-fluid rounded w-100" alt="Image">
+                            </div>
+                            <div class="team-content pt-4">
+                                <h4>MARTIN DOE</h4>
+                                <p>Profession</p>
+                                <div class="team-icon d-flex justify-content-center">
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item p-4 pt-0">
+                            <div class="team-img">
+                                <img src="img/team-3.jpg" class="img-fluid rounded w-100" alt="Image">
+                            </div>
+                            <div class="team-content pt-4">
+                                <h4>MARTIN DOE</h4>
+                                <p>Profession</p>
+                                <div class="team-icon d-flex justify-content-center">
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item p-4 pt-0">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" class="img-fluid rounded w-100" alt="Image">
+                            </div>
+                            <div class="team-content pt-4">
+                                <h4>MARTIN DOE</h4>
+                                <p>Profession</p>
+                                <div class="team-icon d-flex justify-content-center">
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        -->
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h1 class="display-5 text-capitalize mb-3">Dịch vụ du lịch <span class="text-primary">Tâm Anh</span></h1>
+                    <p class="mb-0">Những dịch vụ và gói thuê xe tiêu biểu của Tâm Anh — thông tin, hình ảnh và liên hệ đặt xe nhanh chóng.</p>
+                </div>
+                <div class="services-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="categories-item p-4">
+                        <div class="categories-item-inner">
+                            <div class="categories-img rounded-top">
+                                <img src="img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="Thuê xe 4 chỗ">
+                            </div>
+                            <div class="categories-content rounded-bottom p-4">
+                                <h4>Du lịch Cần Thơ - Bạc Liêu</h4>
+                                <div class="categories-review mb-3 small text-secondary">
+                                    <span class="me-3"><i class="fa fa-calendar"></i> 30 Dec 2025</span>
+                                    <span><i class="fa fa-user"></i> Admin</span>
+                                </div>
+                                <p class="mb-3">Dịch vụ thuê xe 4 chỗ cho gia đình, công tác và du lịch ngắn ngày. Xe đời mới, lái xe chuyên nghiệp, giá cạnh tranh.</p>
+                                <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-2">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories-item p-4">
+                        <div class="categories-item-inner">
+                            <div class="categories-img rounded-top">
+                                <img src="img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="Thuê xe 7 chỗ">
+                            </div>
+                            <div class="categories-content rounded-bottom p-4">
+                                <h4>Thuê xe 7 chỗ - Gia đình & Đoàn</h4>
+                                <div class="categories-review mb-3 small text-secondary">
+                                    <span class="me-3"><i class="fa fa-calendar"></i> 25 Dec 2025</span>
+                                    <span><i class="fa fa-user"></i> Admin</span>
+                                </div>
+                                <p class="mb-3">Du lịch Cần Thơ - Sài Gòn với các tuyến xe 7 chỗ tiện nghi, giá cả hợp lý và dịch vụ chuyên nghiệp.</p>
+                                <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-2">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories-item p-4">
+                        <div class="categories-item-inner">
+                            <div class="categories-img rounded-top">
+                                <img src="img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="Thuê xe khách">
+                            </div>
+                            <div class="categories-content rounded-bottom p-4">
+                                <h4>Thuê xe khách - Tuyến liên tỉnh</h4>
+                                <div class="categories-review mb-3 small text-secondary">
+                                    <span class="me-3"><i class="fa fa-calendar"></i> 27 Dec 2025</span>
+                                    <span><i class="fa fa-user"></i> Admin</span>
+                                </div>
+                                <p class="mb-3">Dịch vụ xe khách 16-45 chỗ cho các tuyến liên tỉnh, phục vụ đoàn lớn, đảm bảo an toàn và tiện nghi trên hành trình dài.</p>
+                                <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-2">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End --> 
+
+        <!-- Placeholder anchors for blog/contact so nav anchors work from other pages -->
+        <div id="blog"></div>
+        <div id="contact"></div>
+        <div id="site-footer"></div>
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
