@@ -86,6 +86,8 @@
             var $f = $('#quoteForm');
             if ($f.length === 0) return;
             var vehicle = $f.find('[name="vehicle_type"]').val() || '';
+            var full_name = $f.find('[name="full_name"]').val() || '';
+            var phone = $f.find('[name="phone"]').val() || '';
             var pickup = $f.find('[name="pickup"]').val() || '';
             var dropoff = $f.find('[name="dropoff"]').val() || '';
             var pickup_date = $f.find('[name="pickup_date"]').val() || '';
@@ -98,6 +100,8 @@
             bodyLines.push('Loại xe: ' + vehicle);
             bodyLines.push('Địa điểm đón: ' + pickup);
             bodyLines.push('Địa điểm đến: ' + dropoff);
+            bodyLines.push('Họ và tên: ' + full_name);
+            bodyLines.push('SĐT: ' + phone);
             bodyLines.push('Ngày giờ đón: ' + pickup_date + ' ' + pickup_time);
             bodyLines.push('Ngày giờ đến: ' + drop_date + ' ' + drop_time);
             var body = encodeURIComponent(bodyLines.join('\n'));
@@ -131,6 +135,8 @@
             // If Formspree endpoint is configured, send via fetch; otherwise fallback to mailto
             if (FORMSPREE_ENDPOINT && FORMSPREE_ENDPOINT.indexOf('formspree.io') !== -1) {
                 var payload = {
+                    full_name: full_name,
+                    phone: phone,
                     vehicle_type: vehicle,
                     pickup: pickup,
                     dropoff: dropoff,
