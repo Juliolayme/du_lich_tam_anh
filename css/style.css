@@ -130,7 +130,7 @@
         .zalo-container .cmoz-alo-circle-fill { width: 34px; height: 34px; left: 5px; top: 5px; }
         .zalo-container .zalo-btn img { width: 20px; height: 20px; }
 }
-}
+
 
 /*** Button Start ***/
 .btn {
@@ -568,6 +568,38 @@ body {
 }
 /*** Cars Categories End ***/
 
+/*** Services Carousel Start ***/
+.services-carousel .owl-stage-outer {
+    margin-top: 65px;
+    margin-right: -1px;
+}
+
+.services-carousel .owl-nav .owl-prev,
+.services-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: -65px;
+    padding: 10px 35px;
+    color: var(--bs-white);
+    background: var(--bs-primary);
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.services-carousel .owl-nav .owl-prev {
+    left: 0 !important;
+}
+
+.services-carousel .owl-nav .owl-next {
+    right: 0;
+}
+
+.services-carousel .owl-nav .owl-prev:hover,
+.services-carousel .owl-nav .owl-next:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+/*** Services Carousel End ***/
+
 
 /*** Blog Start ***/
 .blog .blog-item {
@@ -749,12 +781,13 @@ body {
 
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: #f8f9fa;
     transition: 0.5s;
 }
 
 .footer .footer-item p {
     line-height: 35px;
+    color: #f8f9fa;
 }
 
 .footer .footer-item a:hover {
@@ -784,3 +817,51 @@ body {
 /*** copyright end ***/
 
 
+/* Tùy chỉnh danh mục xe Tâm Anh */
+.categories-item-inner {
+    border: 1px solid #eee;
+    transition: 0.5s;
+    background: #ffffff;
+}
+
+.categories-item:hover .categories-item-inner {
+    border-color: #198754; /* Màu xanh success đồng bộ index */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.categories-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.seat-info {
+    display: inline-block;
+    background: #f8f9fa;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #333;
+    border: 1px dashed #198754;
+}
+
+.btn-booking {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    border: none;
+    background: #198754 !important; /* Ép màu xanh success */
+}
+
+.btn-booking:hover {
+    background: #157347 !important;
+    transform: translateY(-3px);
+}
+
+.categories-img img {
+    height: 200px; /* Cố định chiều cao để ảnh đều nhau */
+    object-fit: contain; /* Giữ nguyên tỉ lệ ảnh xe đã tách nền */
+    padding: 15px;
+}
