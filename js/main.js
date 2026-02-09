@@ -111,7 +111,7 @@
 
             // Configurable Formspree endpoint. Replace with your Formspree form ID:
             // e.g. 'https://formspree.io/f/XXXXXXXX'
-            var FORMSPREE_ENDPOINT = 'https://formspree.io/f/xvzbpzpd';
+            var FORMSPREE_ENDPOINT = 'https://formspree.io/f/xnjbnprr';
 
             function showPopup(message) {
                 var $p = $('<div class="quote-popup">').text(message).css({
